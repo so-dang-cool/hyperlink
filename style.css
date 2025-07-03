@@ -1,0 +1,54 @@
+body, input {
+  background-color: #102;
+  color: #edf;
+}
+
+#content {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+#content > * {
+  padding: 1em;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #204;
+  grid-column: 1 / 4;
+}
+
+#left_sidebar {
+  grid-column: 1 / 2;
+}
+
+#left_sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+
+#left_sidebar li {
+  list-style-type: "⥬";
+  color: #edfc;
+  cursor: pointer;
+}
+
+#content > main {
+  padding: 0;
+  grid-column: 2 / 3;
+}
+
+main iframe {
+  margin: 0;
+  width: 100%;
+  border: 0;
+}
+
+#right_sidebar {
+  grid-column: 3 / 4;
+}
+
+.faint, .faint a {
+  color: #edf6;
+  text-decoration: none;
+}
